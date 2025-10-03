@@ -1,73 +1,72 @@
-# React + TypeScript + Vite
+# Infotech Wizard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small React + Vite + TypeScript starter project for the Infotech Services marketing landing/demo site.
 
-Currently, two official plugins are available:
+This repository contains a lightweight front-end built with Vite, React 19, TypeScript and Tailwind CSS. It is intended as a simple landing or demo site with a few UI components under `components/` and static assets in `src/assets` and `public/`.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Link
+[https://infotech-wizard.vercel.app](https://infotech-wizard.vercel.app)
 
-## React Compiler
+## Quickstart
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Prerequisites:
+- Node.js 18+ (or an active Node release compatible with the project's dependencies)
+- pnpm (recommended since a `pnpm-lock.yaml` is present). npm or yarn will also work but commands below use `pnpm`.
 
-## Expanding the ESLint configuration
+Install dependencies:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```powershell
+pnpm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Run a local dev server:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```powershell
+pnpm run dev
 ```
+
+Build for production:
+
+```powershell
+pnpm run build
+```
+
+## Project structure
+
+Top-level files of interest:
+
+- `index.html` — Vite HTML entry
+- `vite.config.ts` — Vite configuration
+- `tsconfig.json`, `tsconfig.app.json`, `tsconfig.node.json` — TypeScript configs
+- `tailwind.config.js`, `postcss.config.js` — Tailwind / PostCSS config
+- `package.json` — scripts & dependencies
+- `pnpm-lock.yaml` — lockfile (pnpm)
+
+Source code:
+
+- `src/main.tsx` — app bootstrap and hydration
+- `src/App.tsx` — main App component
+- `src/index.css` — global styles (Tailwind)
+- `src/components/` — presentational components (`Hero.tsx`, `Navbar.tsx`, `Details.tsx`)
+- `src/assets/` — SVGs and images used in the UI
+- `public/` — static files served by Vite
+
+## Tech stack
+
+- Vite (dev server, build)
+- React 19 + TypeScript
+- Tailwind CSS (V3) + PostCSS
+- ESLint for linting
+
+## Scripts
+
+The following npm scripts are defined in `package.json` (run via `pnpm run <script>`):
+
+- `dev` — start Vite dev server
+- `build` — TypeScript build (`tsc -b`) then Vite build
+- `preview` — locally preview the production build
+- `lint` — run ESLint over the repository
+
+If you prefer npm or yarn, replace `pnpm` with `npm` or `yarn` (for example, `npm run dev`).
+
+Made with ♥ by [Jeet Das](https://github.com/JeetDas5)
