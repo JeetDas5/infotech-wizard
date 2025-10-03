@@ -1,9 +1,9 @@
 import React from "react";
 
-const g1 = "/src/assets/g1.svg";
-const g2 = "/src/assets/g2.svg";
-const g3 = "/src/assets/g3.svg";
-const g4 = "/src/assets/g4.svg";
+const g1 = "/assets/g1.svg";
+const g2 = "/assets/g2.svg";
+const g3 = "/assets/g3.svg";
+const g4 = "/assets/g4.svg";
 
 type CardData = {
   image: string;

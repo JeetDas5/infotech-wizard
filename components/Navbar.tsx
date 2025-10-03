@@ -6,7 +6,7 @@ const Navbar: React.FC = () => {
   return (
     <header className="w-full flex items-center justify-between py-3 px-4 md:px-16 lg:px-24">
       <div className="flex items-center gap-4">
-        <img src="/src/assets/Group.svg" alt="logo" className="h-8 w-auto" />
+        <img src="/assets/Group.svg" alt="logo" className="h-8 w-auto" />
       </div>
 
       <nav className="hidden md:flex gap-8 text-lg font-medium">

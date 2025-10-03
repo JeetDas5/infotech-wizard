@@ -30,14 +30,14 @@ const HeroSection2: React.FC = () => {
 
         <div className="relative flex justify-center lg:justify-end">
           <img
-            src="src/assets/lady.png"
+            src="/assets/lady.png"
             alt="lady"
             className="w-full max-w-md lg:max-w-[640px] rounded-lg object-cover"
           />
 
           <div className="absolute left-1/2 transform -translate-x-1/2 bottom-6 bg-white rounded-lg shadow-lg p-4 flex items-center gap-4 w-64 lg:left-auto lg:right-24 lg:bottom-44 lg:transform-none">
             <img
-              src="src/assets/Mortarboard.png"
+              src="/assets/Mortarboard.png"
               alt="mortarboard"
               className="w-12 h-12 object-contain"
             />
