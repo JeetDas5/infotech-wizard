@@ -4,7 +4,7 @@ const Navbar: React.FC = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="w-full flex items-center justify-between py-3 px-4 md:px-16 lg:px-24">
+    <header className="w-full flex items-center justify-between py-3 px-4 md:px-16 h-20 lg:h-[100px] md:py-0 lg:px-[100px] gap-0 text-left">
       <div className="flex items-center gap-4">
         <img src="/assets/Group.svg" alt="logo" className="h-8 w-auto" />
       </div>
@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
       </nav>
 
       <div className="flex items-center gap-4">
-        <button className="hidden md:inline-block bg-crimson p-2 rounded-full text-white px-4 shadow-[0px_0px_12px_rgba(250,_18,_57,_0.58)]">
+        <button className="hidden ld:h-[46px] md:inline-block bg-crimson p-2 rounded-[30px] text-white py-3.5 px-[22px] shadow-[0px_0px_12px_rgba(250,_18,_57,_0.58)]">
           Get a Quote
         </button>
 

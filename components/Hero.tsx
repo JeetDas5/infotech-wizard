@@ -5,13 +5,13 @@ const HeroSection2: React.FC = () => {
     <section className="w-full bg-gradient-to-r from-[#ffe7eb] to-[#ffbfca] overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 py-20 pb-0 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         <div className="space-y-6">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-black">
+          <h1 className="text-4xl sm:text-5xl lg:text-[64px] font-extrabold leading-tight text-black">
             <span>Your Resume </span>
             <span className="text-crimson">Deserves a yes</span>
             <span> — let&apos;s make it happen</span>
           </h1>
 
-          <p className="text-base sm:text-lg text-gray-700 max-w-xl">
+          <p className="text-base sm:text-lg text-gray-700 max-w-xl lg:w-[485px]">
             If your resume isn&apos;t getting responses, it&apos;s time for an
             upgrade. Get an ATS-optimized resume crafted by HR experts to help
             you land more interviews. Our resumes are designed to get your foot
@@ -19,10 +19,10 @@ const HeroSection2: React.FC = () => {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <button className="px-6 py-3 rounded-full bg-white border border-crimson text-crimson uppercase font-medium shadow-[0px_0px_12px_rgba(250,_18,_57,_0.58)]">
+            <button className="bg-white border border-crimson text-crimson">
               Resume Packages
             </button>
-            <button className="px-6 py-3 rounded-full bg-crimson text-white shadow-[0px_0px_12px_rgba(250,_18,_57,_0.58)] uppercase font-medium">
+            <button className="bg-crimson text-white">
               Contact us
             </button>
           </div>

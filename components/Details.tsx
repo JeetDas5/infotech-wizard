@@ -49,7 +49,9 @@ const Card: React.FC<CardData> = ({ image, title, description }) => (
       <h3 className="w-full text-center font-medium">{title}</h3>
     </div>
 
-    <p className="w-full text-left text-lg leading-[1.6]">{description}</p>
+    <p className="w-full text-left text-lg leading-[30px] inline-block">
+      {description}
+    </p>
   </article>
 );
 

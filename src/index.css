@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  button {
+    @apply px-6 py-3 rounded-[30px] uppercase font-medium shadow-[0px_0px_12px_rgba(250,_18,_57,_0.58)];
+  }
+}
